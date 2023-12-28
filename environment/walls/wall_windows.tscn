@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://pjkugswpuyfn"]
+
+[ext_resource type="ArrayMesh" uid="uid://dqt80olatbkib" path="res://environment_obj_files/SmallWindows_Wall_SideA.obj" id="1_sg674"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_igf4f"]
+points = PackedVector3Array(2.04408, 3.41058, -0.275157, -2.03517, -0.0347252, -0.0643474, -1.99219, 0.0126863, 0, -2.03517, 4.46563, 0.216952, -1.3316, 2.35598, -0.837756, 2.04408, -0.0347252, -0.0643474, 2.04408, 3.62159, 0.287442, 1.2492, 2.8048, -0.799305, 1.34051, -0.0347252, -0.275157, 2.04408, 4.46563, 0.216952, -2.03517, 3.62159, 0.287442, 1.22456, 0.160562, 0.0458, 1.27023, 2.28549, -0.837756, -1.3316, -0.0347252, -0.275157, -2.03517, 3.41058, -0.275157, -1.24633, 2.80767, -0.801851, 2.04408, 0.809311, -0.275157, -2.03517, 0.809311, -0.275157, -1.21565, 0.160562, 0.0458, 1.929, 4.33867, 0.2557, -1.26132, 2.28549, -0.837756, -1.92009, 4.33867, 0.2557, 1.90338, 0.1205, -0.0134675)
+
+[node name="wall_windows" type="StaticBody3D"]
+
+[node name="SmallWindowsWallSideA" type="MeshInstance3D" parent="."]
+mesh = ExtResource("1_sg674")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("ConvexPolygonShape3D_igf4f")

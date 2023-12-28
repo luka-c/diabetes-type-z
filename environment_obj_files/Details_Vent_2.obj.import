@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://elj23ow3rgpe"
+path="res://.godot/imported/Details_Vent_2.obj-ab89fe88cac202c7418dbc551a4787cb.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Details_Vent_2.obj-ab89fe88cac202c7418dbc551a4787cb.mesh"]
+
+source_file="res://environment_obj_files/Details_Vent_2.obj"
+dest_files=["res://.godot/imported/Details_Vent_2.obj-ab89fe88cac202c7418dbc551a4787cb.mesh", "res://.godot/imported/Details_Vent_2.obj-ab89fe88cac202c7418dbc551a4787cb.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

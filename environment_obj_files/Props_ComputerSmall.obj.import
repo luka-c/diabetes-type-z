@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bpn51wf43dorh"
+path="res://.godot/imported/Props_ComputerSmall.obj-21a6e32e984c5c510764c5a40dae4018.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Props_ComputerSmall.obj-21a6e32e984c5c510764c5a40dae4018.mesh"]
+
+source_file="res://environment_obj_files/Props_ComputerSmall.obj"
+dest_files=["res://.godot/imported/Props_ComputerSmall.obj-21a6e32e984c5c510764c5a40dae4018.mesh", "res://.godot/imported/Props_ComputerSmall.obj-21a6e32e984c5c510764c5a40dae4018.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

@@ -1,0 +1,50 @@
+[gd_scene load_steps=7 format=3 uid="uid://c65btgrwyfogm"]
+
+[ext_resource type="PackedScene" uid="uid://8akyhaisd4u5" path="res://components/candy_mesh.tscn" id="2_8pay7"]
+[ext_resource type="Script" path="res://components/Bullet.gd" id="2_hr6hb"]
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_5fg6u"]
+height = 0.18576
+radius = 0.184786
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3ag8g"]
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_fjxbs"]
+direction = Vector3(0, 0, 1)
+initial_velocity_min = 4.0
+initial_velocity_max = 6.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_p10qu"]
+size = Vector3(0.05, 0.05, 0.05)
+
+[node name="CandyBullet" type="Node3D"]
+transform = Transform3D(0.1, 0, 0, 0, 0.096, 0, 0, 0, 0.1, 0, 0, 0)
+script = ExtResource("2_hr6hb")
+
+[node name="CandyMesh" parent="." instance=ExtResource("2_8pay7")]
+transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 0, 0, 0)
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 10.0
+one_shot = true
+autostart = true
+
+[node name="Area3D" type="Area3D" parent="."]
+collision_layer = 2
+collision_mask = 2
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0328076, 0)
+shape = SubResource("CylinderShape3D_5fg6u")
+
+[node name="GPUParticles3D" type="GPUParticles3D" parent="."]
+material_override = SubResource("StandardMaterial3D_3ag8g")
+emitting = false
+explosiveness = 1.0
+fixed_fps = 60
+visibility_aabb = AABB(-0.451606, -0.578069, -0.345875, 0.928604, 0.949106, 0.662453)
+process_material = SubResource("ParticleProcessMaterial_fjxbs")
+draw_pass_1 = SubResource("BoxMesh_p10qu")
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+[connection signal="area_entered" from="Area3D" to="." method="_on_area_3d_area_entered"]

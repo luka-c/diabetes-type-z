@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://b74xgqguwvyon"
+path="res://.godot/imported/Props_Shelf_Tall.obj-849e8f48616d2bd1c9fa2c2acd7b370a.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Props_Shelf_Tall.obj-849e8f48616d2bd1c9fa2c2acd7b370a.mesh"]
+
+source_file="res://environment_obj_files/Props_Shelf_Tall.obj"
+dest_files=["res://.godot/imported/Props_Shelf_Tall.obj-849e8f48616d2bd1c9fa2c2acd7b370a.mesh", "res://.godot/imported/Props_Shelf_Tall.obj-849e8f48616d2bd1c9fa2c2acd7b370a.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

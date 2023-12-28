@@ -1,0 +1,86 @@
+[gd_scene load_steps=6 format=3 uid="uid://bi3w382vvgivk"]
+
+[ext_resource type="PackedScene" uid="uid://bn5q7eaqg6evt" path="res://assets/low-poly_taurus_raging_judge.glb" id="1_bvvmb"]
+[ext_resource type="AudioStream" uid="uid://366ssvxgall" path="res://audio/Revolver shoot Sound effect HD-[AudioTrimmer.com].mp3" id="2_qyino"]
+
+[sub_resource type="Animation" id="Animation_pjegb"]
+resource_name = "shoot"
+length = 0.56
+step = 0.01
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.01, 0.1),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector3(0.391993, -0.388731, -0.717272), Vector3(0.392, -0.389, -0.65), Vector3(0.391993, -0.388731, -0.717272)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.01, 0.1),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector3(0, 1.5708, 0), Vector3(0, 1.5708, 0.349066), Vector3(0, 1.5708, 0)]
+}
+tracks/2/type = "audio"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("AudioStreamPlayer3D")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"clips": [{
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource("2_qyino")
+}],
+"times": PackedFloat32Array(0)
+}
+tracks/2/use_blend = true
+
+[sub_resource type="Animation" id="Animation_xglxh"]
+resource_name = "switch"
+length = 0.3
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(0.391993, -0.388731, -0.717272), Vector3(0.392, -1.389, -0.717)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_w08ya"]
+_data = {
+"shoot": SubResource("Animation_pjegb"),
+"switch": SubResource("Animation_xglxh")
+}
+
+[node name="DesertEagle" instance=ExtResource("1_bvvmb")]
+transform = Transform3D(-3.61999e-09, 0, 0.004, 0, 0.002, 0, -0.001, 0, -1.448e-08, 0.391993, -0.388731, -0.717272)
+
+[node name="Animation" type="AnimationPlayer" parent="." index="1"]
+libraries = {
+"": SubResource("AnimationLibrary_w08ya")
+}
+
+[node name="RayCast3D" type="RayCast3D" parent="." index="2"]
+transform = Transform3D(-2.41701e-05, 0, -552.948, 0, 552.948, -7.62939e-06, 552.948, 0, -2.41701e-05, 233.498, 96.3481, 0)
+target_position = Vector3(0, 0, -1)
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="." index="3"]
+stream = ExtResource("2_qyino")
+max_db = -1.0

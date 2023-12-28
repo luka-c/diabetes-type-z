@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://d1tqmqp3ylgoo"]
+
+[ext_resource type="ArrayMesh" uid="uid://c7beb0x7cfjli" path="res://environment_obj_files/FloorTile_Basic.obj" id="1_ht8fu"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_slh8m"]
+points = PackedVector3Array(0.825148, 0.111099, 0.825347, -1.01587, -0.015873, -1.01587, -1.01587, -0.015873, 1.01587, 1.01587, -0.015873, -1.01587, -0.825148, 0.111099, -0.825347, 1.01587, -0.015873, 1.01587, -0.825148, 0.111099, 0.825347, 0.825148, 0.111099, -0.825347, -0.952232, 0.0793558, 0.952232, 0.952232, 0.0793558, -0.952232, -0.952232, 0.0793558, -0.952232, 0.952232, 0.0793558, 0.952232, -0.952232, 0.111099, 0.0634423, 0.952232, 0.111099, -0.0634423, 0.0632435, 0.111099, -0.952232, 0.0632435, 0.111099, 0.952232, 0.952232, 0.111099, 0.0634423, -0.952232, 0.111099, -0.0634423, -0.0632435, 0.111099, 0.952232, -0.0632435, 0.111099, -0.952232)
+
+[node name="floor" type="StaticBody3D"]
+
+[node name="FloorTileBasic" type="MeshInstance3D" parent="."]
+mesh = ExtResource("1_ht8fu")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("ConvexPolygonShape3D_slh8m")

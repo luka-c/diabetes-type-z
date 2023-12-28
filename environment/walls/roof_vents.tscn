@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://mnpq6r62pj86"]
+
+[ext_resource type="ArrayMesh" uid="uid://c8s24fqeitcqj" path="res://environment_obj_files/RoofTile_Vents.obj" id="1_v2q2u"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_6e4af"]
+points = PackedVector3Array(-0.941373, 0.0731, -0.941562, 0.984209, 0.042916, 0.984258, 1.01582, -0.0200637, 1.01587, -1.01587, -0.0200637, 1.01587, 1.01582, -0.0200637, -1.01587, -1.01587, -0.0200637, -1.01587, -0.941373, 0.0731, 0.941562, 0.941514, 0.0731, -0.941562, 0.941514, 0.0731, 0.941562, -0.984258, 0.042916, -0.984257, -0.984258, 0.042916, 0.984257, 0.984209, 0.042916, -0.984258)
+
+[node name="roof_vents" type="StaticBody3D"]
+
+[node name="RoofTileVents" type="MeshInstance3D" parent="."]
+mesh = ExtResource("1_v2q2u")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("ConvexPolygonShape3D_6e4af")

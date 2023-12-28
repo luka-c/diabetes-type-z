@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://ckahcwsen4fm2"]
+
+[ext_resource type="ArrayMesh" uid="uid://c5fotsujn5tma" path="res://environment_obj_files/Details_Basic_1.obj" id="1_pjmuf"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_atxix"]
+points = PackedVector3Array(-0.0296648, -0.011104, 0.00991188, 0.128551, 0.128551, 0.000807574, 0.0599799, -0.137143, -0.0420429, -0.137143, 0.0599799, -0.0420429, -0.128551, -0.128551, 0.000807574, 0.128551, -0.0557109, 0.000807574, -0.0557109, 0.128551, 0.000807574, -0.137143, -0.137143, -0.0420429, 0.137143, 0.137143, -0.0420429, 0.0557109, -0.128551, 0.000807574, -0.128551, 0.0557109, 0.000807574, 0.137143, -0.0599799, -0.0420429, -0.0599799, 0.137143, -0.0420429, 0.0296648, 0.011104, 0.00991188, -0.011104, 0.0296648, 0.00991188, 0.011104, -0.0296648, 0.00991188, 0.0296631, -0.0111033, 0.00991047, -0.0296631, 0.0111033, 0.00991047, 0.0111033, 0.0296631, 0.00991047, -0.0111033, -0.0296631, 0.00991047)
+
+[node name="details_basic" type="StaticBody3D"]
+
+[node name="DetailsBasic1" type="MeshInstance3D" parent="."]
+mesh = ExtResource("1_pjmuf")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("ConvexPolygonShape3D_atxix")

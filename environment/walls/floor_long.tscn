@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://dv4yb0b5r6xwd"]
+
+[ext_resource type="ArrayMesh" uid="uid://c7rmnyfuelqnb" path="res://environment_obj_files/FloorTile_Double_Hallway.obj" id="1_ircyb"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_fpots"]
+points = PackedVector3Array(3.03175, 0.0750381, 1.06349, -1.03135, -0.051946, -1.03175, -1.03135, 0.0750381, -1.03175, 3.03175, -0.051946, -1.03175, -1.03135, -0.051946, 1.06349, -1.03135, 0.0750381, 1.06349, 3.03175, 0.0750381, -1.03175, 3.03175, -0.051946, 1.06349)
+
+[node name="floor_long" type="StaticBody3D"]
+
+[node name="FloorTileDoubleHallway" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.963869, 0, 0)
+mesh = ExtResource("1_ircyb")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.963869, 0, 0)
+shape = SubResource("ConvexPolygonShape3D_fpots")

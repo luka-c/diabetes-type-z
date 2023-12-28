@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://biivp6rtung2o"]
+
+[ext_resource type="ArrayMesh" uid="uid://cjdak1hb2le37" path="res://environment_obj_files/Staircase.obj" id="1_2gnde"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_w13jt"]
+points = PackedVector3Array(1.92112, -0.549051, 2.61145, -1.84427, -1.2395, 0.0336197, -1.84427, -1.2395, 3.0882, -1.92112, 0.231356, 0.150317, 1.84427, -1.2395, 0.0336197, 1.86319, 0.208729, 0.0179499, 1.84427, -1.2395, 3.0882, -1.92112, -0.729168, 3.09172, 1.92112, -0.729168, 3.09172, 1.92112, 0.231356, 0.150317, -1.86319, 0.208729, 0.0179499, -1.92112, -0.489257, 2.43112, 1.92112, 0.051239, 0.750495, -1.92112, 0.051239, 0.750495, -1.92112, -0.66908, 2.9715, 1.92112, -0.66908, 2.9715, 1.92112, -0.489257, 2.43112)
+
+[node name="staircase" type="StaticBody3D"]
+
+[node name="Staircase" type="MeshInstance3D" parent="."]
+mesh = ExtResource("1_2gnde")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("ConvexPolygonShape3D_w13jt")

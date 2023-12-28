@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://bvd7t4dt4vh4x"]
+
+[ext_resource type="ArrayMesh" uid="uid://jmaq2cv8gpfh" path="res://environment_obj_files/DoorSingleLong_Wall_SideA.obj" id="1_et3ey"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_28dx3"]
+points = PackedVector3Array(2.04951, 3.40941, -0.272807, -2.03521, -0.0413141, -0.0615003, -2.03521, -0.0413141, 0.00878358, -2.03521, 4.46611, 0.22009, -0.843776, 2.67061, -1.95146, 2.04951, -0.0413141, 0.00878358, 0.871323, 0.0853276, -1.9678, 1.98816, 4.39841, 0.2557, 0.590145, 2.92473, -1.94006, -0.856647, 0.0853276, -1.9678, -2.03521, 3.62031, 0.290601, -2.03521, 3.40941, -0.272807, 2.04951, 3.62031, 0.290601, 0.848903, 2.66547, -1.93935, 2.04951, 4.46611, 0.22009, -0.94351, 0.038576, 0.0456, 2.04951, 0.804049, -0.272807, -0.582289, 2.9326, -1.95187, -2.03521, 0.804049, -0.272807, 0.958193, 0.038576, 0.0456, 2.04951, -0.0413141, -0.0615003, -1.97386, 4.39841, 0.2557)
+
+[node name="door_single_long_wall_side" type="StaticBody3D"]
+
+[node name="DoorSingleLongWallSideA" type="MeshInstance3D" parent="."]
+mesh = ExtResource("1_et3ey")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("ConvexPolygonShape3D_28dx3")

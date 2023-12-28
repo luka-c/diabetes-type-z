@@ -1,0 +1,78 @@
+[gd_scene load_steps=6 format=3 uid="uid://ckjd88vthauxk"]
+
+[ext_resource type="PackedScene" uid="uid://fyqcntsmdds1" path="res://assets/animated_steampunk_hand_cannon.glb" id="1_spqvb"]
+[ext_resource type="AudioStream" uid="uid://dve5suniatfsy" path="res://audio/cannon.wav" id="2_d2hrx"]
+
+[sub_resource type="Animation" id="Animation_kya37"]
+resource_name = "shoot"
+length = 0.4
+step = 0.01
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.0001, 0.15, 0.3),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector3(0.391993, -0.388731, -0.717272), Vector3(0.3, -1.1, 1.5), Vector3(0.3, -1.1, 1.8), Vector3(0.3, -1.1, 1.5)]
+}
+tracks/1/type = "audio"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("AudioStreamPlayer3D")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"clips": [{
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource("2_d2hrx")
+}],
+"times": PackedFloat32Array(0)
+}
+tracks/1/use_blend = true
+
+[sub_resource type="Animation" id="Animation_i2ior"]
+resource_name = "switch"
+length = 0.3
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(0.3, -1.1, 1.53983), Vector3(0.3, -2.1, 1.54)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_htlxl"]
+_data = {
+"shoot": SubResource("Animation_kya37"),
+"switch": SubResource("Animation_i2ior")
+}
+
+[node name="hand_cannon" type="Node3D"]
+transform = Transform3D(-3.61999e-06, 0, 1, 0, 1, 0, -1, 0, -3.61999e-06, 0.391993, -0.388731, -0.717272)
+
+[node name="animated_steampunk_hand_cannon" parent="." instance=ExtResource("1_spqvb")]
+transform = Transform3D(-0.4, 0, -3.01992e-08, 0, 0.33, 0, 6.03983e-08, 0, -0.2, 0, 0, -2)
+
+[node name="RayCast3D" type="RayCast3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.261769, 0.78145, -2.67093)
+target_position = Vector3(0, 0, -1)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_htlxl")
+}
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="."]
+stream = ExtResource("2_d2hrx")
+max_db = -1.0
+pitch_scale = 0.7

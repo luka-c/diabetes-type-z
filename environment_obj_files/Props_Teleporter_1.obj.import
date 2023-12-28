@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dx0l71qfv50nb"
+path="res://.godot/imported/Props_Teleporter_1.obj-b8e4a40d547d737df8c1def80f034674.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Props_Teleporter_1.obj-b8e4a40d547d737df8c1def80f034674.mesh"]
+
+source_file="res://environment_obj_files/Props_Teleporter_1.obj"
+dest_files=["res://.godot/imported/Props_Teleporter_1.obj-b8e4a40d547d737df8c1def80f034674.mesh", "res://.godot/imported/Props_Teleporter_1.obj-b8e4a40d547d737df8c1def80f034674.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

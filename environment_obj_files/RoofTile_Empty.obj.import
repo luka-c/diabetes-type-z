@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://b6dposax5m40l"
+path="res://.godot/imported/RoofTile_Empty.obj-d2fa4d29d4e8cad521c5d9c3d6a81b3d.mesh"
+
+[deps]
+
+files=["res://.godot/imported/RoofTile_Empty.obj-d2fa4d29d4e8cad521c5d9c3d6a81b3d.mesh"]
+
+source_file="res://environment_obj_files/RoofTile_Empty.obj"
+dest_files=["res://.godot/imported/RoofTile_Empty.obj-d2fa4d29d4e8cad521c5d9c3d6a81b3d.mesh", "res://.godot/imported/RoofTile_Empty.obj-d2fa4d29d4e8cad521c5d9c3d6a81b3d.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

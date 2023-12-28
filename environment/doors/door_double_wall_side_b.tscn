@@ -1,0 +1,80 @@
+[gd_scene load_steps=14 format=3 uid="uid://bmnrwqi0c3go6"]
+
+[ext_resource type="ArrayMesh" uid="uid://cae7v6lvvtmu0" path="res://environment_obj_files/DoorDouble_Wall_SideA.obj" id="1_pgbko"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_q75lm"]
+points = PackedVector3Array(1.27493, 0.169971, -1.03325, 1.48619, 2.56454, -0.329029, 1.27451, 2.56931, -0.327628, 1.27493, 2.56454, -1.03325, 1.48619, 0.169971, -0.329029, 1.48619, 2.56454, -1.03325, 1.27493, 0.169971, -0.329029, 1.48619, 0.169971, -1.03325)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_4l3d6"]
+points = PackedVector3Array(-1.40136, 0.169971, -1.03325, -1.25936, 2.58392, -0.323331, -1.33093, 2.56454, -0.329029, -1.33093, 0.169971, -0.329029, -1.2605, 0.169971, -1.03325, -1.2605, 2.56454, -1.03325, -1.40261, 2.58581, -0.9678, -1.2605, 0.169971, -0.329029, -1.40136, 2.56454, -1.03325, -1.40261, 0.148701, -0.9678)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_6u8wc"]
+points = PackedVector3Array(0.500214, 2.77581, -0.329029, 2.04964, 2.98707, -0.188151, 2.04964, 2.98707, -0.258572, 2.04964, 2.56454, -0.188151, 0.500214, 2.98707, 0.0231143, 1.4862, 2.56454, 0.0231143, 0.500214, 2.98707, -0.329029, 1.4544, 2.59634, -0.302526, 0.500214, 2.77581, 0.0231143, 1.20471, 2.98707, 0.0231143, 1.4862, 2.70546, -0.329029, 2.04964, 2.56454, -0.258572, 1.20471, 2.98707, -0.329029, 1.4862, 2.70546, 0.0231143, 1.22285, 2.61913, -0.283538)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_gtdh6"]
+points = PackedVector3Array(2.04964, 1.22664, -0.117764, 1.3078, 0.945976, -0.31412, 1.5567, 0.874423, -0.329029, 1.48633, 2.56454, -0.329029, 1.3078, 2.49299, 0.0082058, 1.48633, 0.874423, 0.0231143, 2.04964, 2.56454, -0.258572, 2.04964, 0.874423, -0.258572, 1.48633, 2.56454, 0.0231143, 1.27148, 2.57222, -0.330629, 1.3078, 0.945976, 0.0082058, 2.04964, 2.56454, -0.188151, 2.04964, 0.874423, -0.117764, 1.5567, 1.22664, -0.329029)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_d0gvg"]
+points = PackedVector3Array(-2.03521, 2.56454, -0.258572, 0.500214, 2.98707, 0.0231143, 0.500214, 2.98707, -0.329029, -2.03521, 2.98707, -0.188151, -1.18966, 2.56454, 0.0231143, 0.500214, 2.77581, -0.329029, -1.18966, 2.98707, 0.0231143, 0.500214, 2.77581, 0.0231143, -1.18966, 2.56454, -0.329029, -2.03521, 2.98707, -0.258572, -1.47159, 2.70546, 0.0231143, -2.03521, 2.56454, -0.188151, -1.4544, 2.5697, -0.324729)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_d2o04"]
+points = PackedVector3Array(-1.2605, 2.56454, 0.0231143, -2.03521, 0.874423, -0.258572, -1.54222, 0.874423, -0.329029, -2.03521, 2.56454, -0.258572, -1.24549, 2.59729, -0.335853, -1.2605, 0.874423, 0.0231143, -2.03521, 1.22664, -0.117764, -1.2605, 0.874423, -0.329029, -1.47185, 2.56454, 0.0231143, -1.47185, 0.874423, 0.0231143, -2.03521, 2.56454, -0.188151, -1.47185, 2.56454, -0.329029, -1.99849, 0.954538, -0.1211, -1.54222, 1.22664, -0.329029)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_vem65"]
+points = PackedVector3Array(2.04948, 0.874257, -0.0473418, 1.20458, -0.0412247, -0.0473418, 2.04948, -0.0412247, 0.0231005, 1.55672, -0.0412247, -0.329029, 1.3078, 0.831678, -0.309375, 1.27506, 0.803732, 0.0935429, 2.04948, 0.874257, -0.258545, 1.20458, 0.0996463, -0.329029, 1.27506, -0.0412247, 0.0935429, 1.55672, 0.803732, 0.0935429, 1.55672, 0.874257, -0.329029, 2.04948, -0.0412247, -0.0473418, 2.04948, 0.803732, 0.0231005, 1.55672, -0.0412247, 0.0935429, 1.55672, 0.874257, 0.0231005, 1.27506, -0.0412247, -0.329029, 1.20458, 0.0996463, 0.0231005, 2.04948, 0.803732, -0.258545)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_e60hp"]
+points = PackedVector3Array(-1.19024, 0.0996463, 0.0231005, -2.03513, -0.0412247, -0.0473418, -1.54229, -0.0412247, -0.329029, -2.03513, 0.874257, -0.258545, -1.26063, 0.803732, 0.0935429, -1.26063, 0.874257, -0.329029, -2.03513, 0.803732, 0.0231005, -1.54229, -0.0412247, 0.0935429, -1.26063, -0.0412247, -0.329029, -1.26063, -0.0412247, 0.0935429, -1.26063, 0.874257, 0.0231005, -2.03513, -0.0412247, 0.0231005, -1.19024, 0.0996463, -0.329029, -1.54229, 0.874257, -0.329029, -1.54229, 0.803732, 0.0935429, -2.03513, 0.874257, -0.0473418, -1.19024, -0.0412247, -0.0473418, -2.03513, 0.803732, -0.258545)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_dexb0"]
+points = PackedVector3Array(1.20441, 2.98707, -0.329029, -1.40136, 2.56454, -1.03325, -1.42701, 2.56079, -0.9678, 1.4544, 2.5692, -0.336787, 1.48621, 2.70546, -1.03325, -1.18993, 2.98707, -0.329029, -1.18993, 2.98707, -1.03325, -1.44937, 2.63034, -0.317319, 1.20441, 2.98707, -1.03325, 1.3421, 2.58563, -0.9981, -1.26972, 2.57392, -0.344664, -1.40136, 2.77581, -1.03325)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_odn1f"]
+points = PackedVector3Array(-1.47179, -0.0407768, -1.03325, -1.40208, 2.67772, -0.336127, -1.47179, 2.7054, -0.329029, -1.40137, 2.7054, -1.03325, -1.40137, -0.0407768, -0.329029, -1.47179, 2.7054, -1.03325, -1.47179, -0.0407768, -0.329029, -1.40137, -0.0407768, -1.03325)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_sw6kr"]
+points = PackedVector3Array(-2.03521, 3.69153, 0.163985, 2.04964, 4.46611, 0.304829, 2.04964, 3.62105, 0.304829, -2.03521, 4.46611, 0.304829, 1.41508, 3.9028, 0.163985, -2.03521, 3.62105, 0.304829, -2.03521, 4.46611, 0.234407, 1.93033, 3.64574, 0.168099, 2.04964, 4.46611, 0.234407, -1.47143, 3.9028, 0.163985, -1.9159, 3.64574, 0.168099, 2.04964, 3.69153, 0.163985)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_xdyvv"]
+points = PackedVector3Array(-2.03521, 2.98725, -0.2586, 2.04964, 3.69126, 0.163971, 2.04964, 3.55045, 0.163971, -2.03521, 3.69126, 0.163971, 2.04964, 3.48007, -0.2586, 2.04964, 2.98725, -0.188158, -2.03521, 3.48007, -0.2586, -2.03521, 3.05763, -0.117715, -2.03521, 3.55045, 0.163971, 2.04964, 2.98725, -0.2586, 0.640575, 3.62089, -0.0473142, 2.04964, 3.05763, -0.117715, -2.03521, 3.69126, 0.0935291, 2.04964, 3.69126, 0.0935291, -2.03521, 2.98725, -0.188158, -0.626546, 3.62089, -0.0473142)
+
+[node name="door_double_wall_side_b" type="StaticBody3D"]
+
+[node name="DoorDoubleWallSideA" type="MeshInstance3D" parent="."]
+mesh = ExtResource("1_pgbko")
+
+[node name="@CollisionShape3D@80224" type="CollisionShape3D" parent="."]
+shape = SubResource("ConvexPolygonShape3D_q75lm")
+
+[node name="@CollisionShape3D@80222" type="CollisionShape3D" parent="."]
+shape = SubResource("ConvexPolygonShape3D_4l3d6")
+
+[node name="@CollisionShape3D@80220" type="CollisionShape3D" parent="."]
+shape = SubResource("ConvexPolygonShape3D_6u8wc")
+
+[node name="@CollisionShape3D@80219" type="CollisionShape3D" parent="."]
+shape = SubResource("ConvexPolygonShape3D_gtdh6")
+
+[node name="@CollisionShape3D@80218" type="CollisionShape3D" parent="."]
+shape = SubResource("ConvexPolygonShape3D_d0gvg")
+
+[node name="@CollisionShape3D@80217" type="CollisionShape3D" parent="."]
+shape = SubResource("ConvexPolygonShape3D_d2o04")
+
+[node name="@CollisionShape3D@80216" type="CollisionShape3D" parent="."]
+shape = SubResource("ConvexPolygonShape3D_vem65")
+
+[node name="@CollisionShape3D@80213" type="CollisionShape3D" parent="."]
+shape = SubResource("ConvexPolygonShape3D_e60hp")
+
+[node name="@CollisionShape3D@80212" type="CollisionShape3D" parent="."]
+shape = SubResource("ConvexPolygonShape3D_dexb0")
+
+[node name="@CollisionShape3D@80211" type="CollisionShape3D" parent="."]
+shape = SubResource("ConvexPolygonShape3D_odn1f")
+
+[node name="@CollisionShape3D@80210" type="CollisionShape3D" parent="."]
+shape = SubResource("ConvexPolygonShape3D_sw6kr")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("ConvexPolygonShape3D_xdyvv")

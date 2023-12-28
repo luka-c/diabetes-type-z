@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://biup1jljjkiu2"
+path="res://.godot/imported/RoofTile_Plate2.obj-b29949474c22100e5b97a08cade6a0be.mesh"
+
+[deps]
+
+files=["res://.godot/imported/RoofTile_Plate2.obj-b29949474c22100e5b97a08cade6a0be.mesh"]
+
+source_file="res://environment_obj_files/RoofTile_Plate2.obj"
+dest_files=["res://.godot/imported/RoofTile_Plate2.obj-b29949474c22100e5b97a08cade6a0be.mesh", "res://.godot/imported/RoofTile_Plate2.obj-b29949474c22100e5b97a08cade6a0be.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://cy8fw4yftwu2i"]
+
+[ext_resource type="ArrayMesh" uid="uid://da0v1rfqjn2gf" path="res://environment_obj_files/RoofTile_Pipes1.obj" id="1_iygpe"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_quoe6"]
+points = PackedVector3Array(0.952232, 0.102626, 0.952232, -0.920411, -0.0560419, -0.92061, 0.952232, 0.102626, -0.952232, -0.952232, 0.102626, 0.952232, 0.92061, -0.0560419, 0.92061, -0.920411, -0.0560419, 0.92061, 0.92061, -0.0560419, -0.92061, -0.952232, 0.102626, -0.952232, -0.9475, 0.0676858, 0.9475, 0.9475, 0.0676858, -0.9475, -0.9475, 0.0676858, -0.9475, 0.9475, 0.0676858, 0.9475)
+
+[node name="roof_pipes" type="StaticBody3D"]
+
+[node name="RoofTilePipes1" type="MeshInstance3D" parent="."]
+mesh = ExtResource("1_iygpe")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("ConvexPolygonShape3D_quoe6")

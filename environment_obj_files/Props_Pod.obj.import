@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://runkpcag3xcl"
+path="res://.godot/imported/Props_Pod.obj-e39fd94b671475ed3462f29414a96819.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Props_Pod.obj-e39fd94b671475ed3462f29414a96819.mesh"]
+
+source_file="res://environment_obj_files/Props_Pod.obj"
+dest_files=["res://.godot/imported/Props_Pod.obj-e39fd94b671475ed3462f29414a96819.mesh", "res://.godot/imported/Props_Pod.obj-e39fd94b671475ed3462f29414a96819.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

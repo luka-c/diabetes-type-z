@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://o08060bph2jt"]
+
+[ext_resource type="ArrayMesh" uid="uid://dvpydspaej0eb" path="res://environment_obj_files/Pipes.obj" id="1_parfx"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_v3tem"]
+points = PackedVector3Array(-0.184937, 4.23567, 0.20098, 1.67597, 4.37887, 0.320287, 1.84329, 4.33114, 0.296417, -1.47336, 3.99707, 0.344156, 1.67597, 3.97321, 0.22485, -1.47336, 4.37887, 0.320287, -1.47336, 3.97321, 0.22485, 1.67597, 3.99707, 0.344156, 1.67597, 4.37887, 0.22485, -1.68839, 4.2834, 0.20098, 1.84329, 4.2834, 0.20098, -1.47336, 4.37887, 0.22485, -1.68839, 4.02094, 0.296417, 1.84329, 4.02094, 0.296417, -1.68839, 4.33114, 0.296417, 1.509, 4.30727, 0.20098, -1.68839, 3.99707, 0.24872, 1.84329, 4.02094, 0.22485, -1.68839, 4.23567, 0.320287, 1.509, 4.23567, 0.20098, -1.68839, 4.33114, 0.22485, 1.84329, 4.33114, 0.22485)
+
+[node name="pipes" type="StaticBody3D"]
+
+[node name="Pipes" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -3.81203, 0)
+mesh = ExtResource("1_parfx")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -3.81203, 0)
+shape = SubResource("ConvexPolygonShape3D_v3tem")

@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://cm2k1r2ef5cu2"]
+
+[ext_resource type="ArrayMesh" uid="uid://cher5th1v3ne8" path="res://environment_obj_files/RoofTile_Details.obj" id="1_ep7cd"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_sa02i"]
+points = PackedVector3Array(-1.01587, -0.0232606, -1.01587, 0.952184, 0.103699, 0.952232, -1.01587, -0.0232606, 1.01587, 1.01582, -0.0232606, -1.01587, -0.952233, 0.103699, -0.952232, -0.952233, 0.103699, 0.952232, 0.952184, 0.103699, -0.952232, 1.01582, -0.0232606, 1.01587)
+
+[node name="roof_tile" type="StaticBody3D"]
+
+[node name="RoofTileDetails" type="MeshInstance3D" parent="."]
+mesh = ExtResource("1_ep7cd")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("ConvexPolygonShape3D_sa02i")

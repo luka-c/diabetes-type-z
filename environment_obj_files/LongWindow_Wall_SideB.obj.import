@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://c5kymx127p86e"
+path="res://.godot/imported/LongWindow_Wall_SideB.obj-b1e4915ed39b4949a27cdcdedb5bccba.mesh"
+
+[deps]
+
+files=["res://.godot/imported/LongWindow_Wall_SideB.obj-b1e4915ed39b4949a27cdcdedb5bccba.mesh"]
+
+source_file="res://environment_obj_files/LongWindow_Wall_SideB.obj"
+dest_files=["res://.godot/imported/LongWindow_Wall_SideB.obj-b1e4915ed39b4949a27cdcdedb5bccba.mesh", "res://.godot/imported/LongWindow_Wall_SideB.obj-b1e4915ed39b4949a27cdcdedb5bccba.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

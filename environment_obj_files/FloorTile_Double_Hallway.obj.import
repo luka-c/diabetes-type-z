@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://c7rmnyfuelqnb"
+path="res://.godot/imported/FloorTile_Double_Hallway.obj-f3a3855ba7f4216b4f8c2690c9143fcc.mesh"
+
+[deps]
+
+files=["res://.godot/imported/FloorTile_Double_Hallway.obj-f3a3855ba7f4216b4f8c2690c9143fcc.mesh"]
+
+source_file="res://environment_obj_files/FloorTile_Double_Hallway.obj"
+dest_files=["res://.godot/imported/FloorTile_Double_Hallway.obj-f3a3855ba7f4216b4f8c2690c9143fcc.mesh", "res://.godot/imported/FloorTile_Double_Hallway.obj-f3a3855ba7f4216b4f8c2690c9143fcc.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

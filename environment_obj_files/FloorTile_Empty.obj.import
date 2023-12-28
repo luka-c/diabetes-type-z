@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dcg1sfpbmv3ha"
+path="res://.godot/imported/FloorTile_Empty.obj-9243c6097335b972ac7d1f3949902db6.mesh"
+
+[deps]
+
+files=["res://.godot/imported/FloorTile_Empty.obj-9243c6097335b972ac7d1f3949902db6.mesh"]
+
+source_file="res://environment_obj_files/FloorTile_Empty.obj"
+dest_files=["res://.godot/imported/FloorTile_Empty.obj-9243c6097335b972ac7d1f3949902db6.mesh", "res://.godot/imported/FloorTile_Empty.obj-9243c6097335b972ac7d1f3949902db6.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

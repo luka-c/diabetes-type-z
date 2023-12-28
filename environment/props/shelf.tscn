@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://cb3ncb83aialm"]
+
+[ext_resource type="ArrayMesh" uid="uid://bftjqxqq48v48" path="res://environment_obj_files/Props_Shelf.obj" id="1_d14ov"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_87yj6"]
+points = PackedVector3Array(0.8698, 2.23859, 0.389258, -0.8945, 0.399869, -0.37732, -0.832929, 0.157773, -0.4054, -0.846846, 0.139426, 0.394926, 0.834114, 0.0379722, -0.293472, -0.832929, 2.34934, -0.4054, 0.829714, 2.34934, -0.4054, -0.846842, 2.36768, 0.394924, 0.843632, 0.139426, 0.394926, 0.8945, 0.396795, -0.378648, 0.843508, 2.48304, 0.279557, -0.837189, 2.46917, -0.293425, -0.846861, 0.0241047, 0.279605, 0.829714, 0.157773, -0.4054, -0.846722, 2.48304, 0.279557, 0.843647, 0.0241047, 0.279605, 0.833975, 2.46917, -0.293425, -0.837328, 0.0379722, -0.293472, 0.881136, 2.2514, -0.373129, -0.884563, 2.2514, -0.373217, -0.8698, 2.23472, 0.38779, 0.843628, 2.36768, 0.394924, 0.8698, 0.420414, 0.389258, -0.8698, 0.423488, 0.38779)
+
+[node name="shelf" type="StaticBody3D"]
+
+[node name="PropsShelf" type="MeshInstance3D" parent="."]
+mesh = ExtResource("1_d14ov")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("ConvexPolygonShape3D_87yj6")

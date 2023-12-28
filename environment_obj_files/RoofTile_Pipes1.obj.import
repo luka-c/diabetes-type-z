@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://da0v1rfqjn2gf"
+path="res://.godot/imported/RoofTile_Pipes1.obj-a9b6bd4ae1474cf26199e5f6ce766482.mesh"
+
+[deps]
+
+files=["res://.godot/imported/RoofTile_Pipes1.obj-a9b6bd4ae1474cf26199e5f6ce766482.mesh"]
+
+source_file="res://environment_obj_files/RoofTile_Pipes1.obj"
+dest_files=["res://.godot/imported/RoofTile_Pipes1.obj-a9b6bd4ae1474cf26199e5f6ce766482.mesh", "res://.godot/imported/RoofTile_Pipes1.obj-a9b6bd4ae1474cf26199e5f6ce766482.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

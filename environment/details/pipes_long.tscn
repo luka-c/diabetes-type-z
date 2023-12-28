@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://c418sennclely"]
+
+[ext_resource type="ArrayMesh" uid="uid://bgnej4sirwlbd" path="res://environment_obj_files/Details_Pipes_Long.obj" id="1_ty0wn"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_7kmk6"]
+points = PackedVector3Array(0.258424, 0.779665, 0.113186, -0.269776, -0.804876, -0.0125762, 0.258424, -0.804876, -0.0125762, -0.269776, 0.804876, -0.0125762, -0.244597, -0.779665, 0.113186, 0.258424, 0.804876, -0.0125762, 0.258424, -0.779665, 0.113186, -0.244597, 0.779665, 0.113186)
+
+[node name="pipes_long" type="StaticBody3D"]
+
+[node name="DetailsPipesLong" type="MeshInstance3D" parent="."]
+mesh = ExtResource("1_ty0wn")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("ConvexPolygonShape3D_7kmk6")

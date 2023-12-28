@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://cvry1ykf2ocbm"]
+
+[ext_resource type="ArrayMesh" uid="uid://dys4ky2ibbg07" path="res://environment_obj_files/RoofTile_OrangeVent.obj" id="1_qx42y"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_ygi6f"]
+points = PackedVector3Array(0.507937, 0.117757, 0.317411, -1.01587, -0.00921455, -1.01587, 1.01587, -0.00921455, -1.01587, 1.01587, -0.00921455, 1.01587, -0.952232, 0.0859987, 0.952232, -0.952232, 0.0859987, -0.952232, -1.01587, -0.00921455, 1.01587, 0.952232, 0.0859987, -0.952232, 0.952232, 0.0859987, 0.952232, 0.761706, -0.040973, -0.222148, -0.666642, -0.040973, 0.317411, -0.666642, 0.117757, -0.158705, 0.476116, 0.117757, -0.349032, -0.666642, -0.040973, -0.317411, 0.730084, -0.040973, 0.253968, -0.475917, 0.117757, 0.349032, 0.666642, 0.117757, -0.158705, -0.761706, -0.040973, 0.222148, -0.475917, 0.117757, -0.349032, -0.666642, 0.117757, 0.158705, 0.666642, 0.117757, 0.158705, 0.730084, -0.040973, -0.253968, -0.761706, -0.040973, -0.222148, 0.476116, 0.117757, 0.349032, 0.761706, -0.040973, 0.222148)
+
+[node name="roof_tile_vent" type="StaticBody3D"]
+
+[node name="RoofTileOrangeVent" type="MeshInstance3D" parent="."]
+mesh = ExtResource("1_qx42y")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("ConvexPolygonShape3D_ygi6f")

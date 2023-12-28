@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://8akyhaisd4u5"]
+
+[ext_resource type="PackedScene" uid="uid://dm8027xv8lpwm" path="res://assets/peppermint_candy.glb" id="1_0wxw7"]
+
+[node name="CandyMesh" instance=ExtResource("1_0wxw7")]

@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://nvsy3a2usita"
+path="res://.godot/imported/FloorTile_Side.obj-f310f0aebb6bd71ef8b1596f1378a70b.mesh"
+
+[deps]
+
+files=["res://.godot/imported/FloorTile_Side.obj-f310f0aebb6bd71ef8b1596f1378a70b.mesh"]
+
+source_file="res://environment_obj_files/FloorTile_Side.obj"
+dest_files=["res://.godot/imported/FloorTile_Side.obj-f310f0aebb6bd71ef8b1596f1378a70b.mesh", "res://.godot/imported/FloorTile_Side.obj-f310f0aebb6bd71ef8b1596f1378a70b.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
